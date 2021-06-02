@@ -13,6 +13,6 @@ class TwitterAccountsController < ApplicationController
 
     private
     def set_twitter_account
-        @twitter_account = Current.user.twitter_account.find(params[:id])
+        @twitter_account = Current.user.twitter_accounts.find(params[:id])
     end
 end
